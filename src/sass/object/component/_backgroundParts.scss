@@ -1,0 +1,11 @@
+.back-green {
+    text-align: center;
+    color: #fff;
+    background-color: #5f9c21;
+    border-radius: 22px;
+    padding: 10px 10px 10px 10px;
+
+    @include mq(sp) {
+        background-color: #fff;
+    }
+}

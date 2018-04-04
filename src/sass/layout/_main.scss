@@ -1,0 +1,183 @@
+main {
+    width: 1200px;
+    margin: 30px auto;
+
+    .recommends {
+        &__wrap {
+            margin-top: 20px;
+            line-height: 1.3em;
+
+            .recommend__list {
+                position: relative;
+                
+                .img-exp {
+                    color: #fff;
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    padding: 2px 5px 0;
+                }
+            }
+
+            img {
+                width: 224px;
+                height: 160px;
+                margin-bottom: 10px;
+                transition: 0.1s linear;
+            }
+
+            .recommend__list:hover {
+                img {
+                    opacity: $hover-opacity;
+                }
+
+                p {
+                    color: $hover-green;
+                }
+            }
+        }
+    }
+
+    .contents {
+        margin-top: 30px;
+
+        .contents-left {
+            width: 300px;
+
+            .category {
+                margin-bottom: 20px;
+                
+                .cat__list {
+                    padding: 10px 15px 10px 15px;
+                    border-bottom: 1px solid #e8e8e8;
+
+                    &:hover {
+                        color: $hover-green;
+                    }
+                }
+            }
+
+            .advertise {
+                margin-bottom: 20px;
+                transition: 0.1s linear;
+
+                &:hover {
+                    opacity: $hover-opacity;
+                }
+            }
+        }
+        
+        .contents-center {
+            width: 620px;
+    
+            li {
+                margin: 40px 0;
+                border-bottom: 1px solid #e8e8e8;
+                padding-bottom: 30px;
+                line-height: 1.8em;
+                
+                a {
+                    width: 100%;
+                }
+    
+                    .article-left {
+                        img {
+                            width: 240px;
+                        }
+                    }
+            
+                    .article-right {
+                        width: 350px;
+
+                        h2 {
+                            margin-bottom: 10px;
+                        }
+
+                        div {
+                            margin-bottom: 10px;
+
+                            img {
+                                width: 50px;
+                            }
+
+                            .circle-img {
+                                border-radius: 50px;
+                            }
+    
+                            .writer__info {
+                                width: 150px;
+                                color: #ff7800;
+                            }
+    
+                            .writer__date {
+                                width: 100px;
+                                color: #a8a8a8;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .hover-color {
+                            color: $hover-green;
+                        }
+                    }
+                }
+
+            .other-articles {
+                a {
+                    background-color: #43cc00;
+                    border-radius: 6px;
+                    border: 2px solid #43cc00;
+                    color: #fff;
+                    padding: 15px 190px 15px 190px;
+                    transition: 0.1s linear;
+
+                    &:hover {
+                        background-color: #fff;
+                        border: 2px solid #43cc00;
+                        color: #43cc00;
+                    }
+                }
+            }
+        }
+    
+        
+        .contents-right {
+            width: 200px;
+
+            .sns__share {
+                background-color: #e8e8e8;
+                margin-bottom: 20px;
+                padding: 5px 10px 0px 10px;
+
+                .hatena {
+                    margin-top: 20px;
+                }
+            }
+
+            div {
+                margin-bottom: 5px;
+            }
+
+            img {
+                width: 200px;
+            }
+
+            .side__tags {
+                width: 200px;
+                border: 1px solid #e8e8e8;
+
+                h3 {
+                    border-radius: 0;
+                }
+
+                .tag__list{
+                    font-size: 10px;
+                    padding: 10px 15px 10px 15px;
+                    word-break: break-word;
+                }
+            }
+        }
+
+    }
+}

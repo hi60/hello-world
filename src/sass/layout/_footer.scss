@@ -1,0 +1,25 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 90%;
+    padding: 20px;
+
+    .footer__nav {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #565656;
+
+        li {
+            padding: 0 25px;
+            border-left: 1px solid #565656;
+        }
+
+        li:first-child {
+            border: none;
+        }
+    }
+
+    .copyright {
+        padding: 20px 0;
+    }
+}

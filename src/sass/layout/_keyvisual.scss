@@ -1,0 +1,20 @@
+.keyvisual {
+    width: 100%;
+    text-align: center;
+    background: url('/assets/img/back.jpg') repeat-x;
+
+    img {
+        width: 1200px;
+        padding: 20px 0 50px 0;
+    }
+
+    .message {
+        width: 900px;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: -150px auto 150px;
+        z-index: 99;
+        color: #666;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
