@@ -1,0 +1,17 @@
+.scroll-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #aeaeae;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 80%;
+    width: 50px;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+
+    @include mq(sp) {
+        display: none;
+    }
+}
