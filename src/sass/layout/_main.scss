@@ -136,11 +136,18 @@ main {
             width: 300px;
 
             @include mq(sp) {
-                width: 80%;
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
             }
 
             .category {
                 margin-bottom: 20px;
+
+                @include mq(sp) {
+                    width: 80%;
+                }
                 
                 .cat__list {
                     padding: 10px 15px 10px 15px;
@@ -194,10 +201,25 @@ main {
                     opacity: $hover-opacity;
                 }
             }
+            
+            .ranking {
+                @include mq(sp) {
+                    width: 100%;
+                }
+            }
         }
         
         .contents-center {
             width: 620px;
+
+            @include mq(sp) {
+                width: 100%;
+
+                article {
+                    width: 95%;
+                    margin: 0 auto;
+                }
+            }
     
             li {
                 margin: 40px 0;
@@ -210,6 +232,11 @@ main {
                 }
     
                     .article-left {
+                        @include mq(sp) {
+                            width: 45%;
+                            margin-right: 7px;
+                        }
+
                         img {
                             width: 240px;
                         }
@@ -227,6 +254,10 @@ main {
                             justify-content: space-between;
                             margin-bottom: 10px;
 
+                            @include mq(sp) {
+                                display: none;
+                            }
+
                             img {
                                 width: 50px;
                             }
@@ -243,6 +274,12 @@ main {
                             &__date {
                                 width: 100px;
                                 color: #a8a8a8;
+                            }
+                        }
+                        
+                        p {
+                            @include mq(sp) {
+                                display: none;
                             }
                         }
                     }
@@ -269,12 +306,24 @@ main {
                         color: #43cc00;
                     }
                 }
+
+                @include mq(sp) {
+                    display: none;
+                }
             }
         }
     
         
         .contents-right {
             width: 200px;
+
+            @include mq(sp) {
+                width: 100%;
+
+                .column__link {
+                    display: none;
+                }
+            }
 
             .sns__share {
                 background-color: #e8e8e8;
@@ -303,6 +352,11 @@ main {
                 width: 200px;
                 border: 1px solid #e8e8e8;
 
+                @include mq(sp) {
+                    width: 100%;
+                    border: none;
+                }
+
                 h3 {
                     border-radius: 0;
                 }
@@ -311,6 +365,10 @@ main {
                     font-size: 10px;
                     padding: 10px 15px 10px 15px;
                     word-break: break-word;
+
+                    @include mq(sp) {
+                        font-size: 100%;
+                    }
                 }
             }
         }

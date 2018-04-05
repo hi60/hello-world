@@ -4,7 +4,11 @@ header {
     box-sizing: border-box;
 
     @include mq(sp) {
+        position: fixed;
+        background-color: #fff;
         border-bottom: none;
+        margin-top: -70px;
+        z-index: 99;
     }
     
     .header {
@@ -17,7 +21,7 @@ header {
             width: 100%;
             align-items: normal;
             flex-flow: column;
-            margin: 10px auto;
+            margin: 10px auto 0;
         }
 
         &__main {
