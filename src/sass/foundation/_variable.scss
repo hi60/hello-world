@@ -1,8 +1,10 @@
 $hover-green: #5f9c21;
+$main-green: #5f9c21;
+$sub-green: #43cc00;
 $hover-opacity: 0.8;
 
-$breakpoint-tb: 768px;
-$breakpoint-sp: 375px;
+$breakpoint-tb: 1000px;
+$breakpoint-sp: 480px;
 
 $breakpoints: (
     'tb': 'screen and (max-width: 768px)',

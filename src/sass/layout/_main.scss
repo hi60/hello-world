@@ -2,28 +2,112 @@ main {
     width: 1200px;
     margin: 30px auto;
 
+    @include mq(sp) {
+        width: 100%;
+    }
+
     .recommends {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+            color: #fff;
+            background-color: $main-green;
+            border-radius: 22px;
+            padding: 10px 10px 10px 10px;
+
+            @include mq(sp) {
+                display: none;
+            }
+        }
+
+        &__title-sp {
+            display: none;
+
+            @include mq(sp) {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                color: #fff;
+                background-color: $main-green;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            &__pu {
+                display: none;
+
+                @include mq(sp) {
+                    display: inline;
+                    color: #fff;
+                    font-size: 60%;
+                    border: 1px solid #fff;
+                    padding: 5px 10px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        
         &__wrap {
+            display: flex;
             margin-top: 20px;
             line-height: 1.3em;
 
-            .recommend__list {
-                position: relative;
-                
-                .img-exp {
-                    color: #fff;
-                    position: absolute;
-                    top: 10px;
-                    right: 15px;
-                    padding: 2px 5px 0;
-                }
+            @include mq(sp) {
+                flex-flow: column;
             }
 
-            img {
-                width: 224px;
-                height: 160px;
-                margin-bottom: 10px;
-                transition: 0.1s linear;
+            .recommend__list {
+                position: relative;
+
+                @include mq(sp) {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
+
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+
+                a {
+                    @include mq(sp) {
+                        display: flex;
+                    }
+
+                    img {
+                        width: 224px;
+                        height: 160px;
+                        margin-bottom: 10px;
+                        transition: 0.1s linear;
+
+                        @include mq(sp) {
+                            width: 140px;
+                            height: 100px;
+                            margin-right: 5px;
+                        }
+                    }
+                    
+                    .img-exp {
+                        color: #fff;
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        padding: 2px 5px 0;
+
+                        @include mq(sp) {
+                            right: initial;
+                            left: 15px;
+                        }
+                    }
+                }
             }
 
             .recommend__list:hover {
@@ -39,10 +123,21 @@ main {
     }
 
     .contents {
+        display: flex;
+        justify-content: space-between;
         margin-top: 30px;
+
+        @include mq(sp) {
+            flex-flow: column;
+            align-items: center;
+        }
 
         .contents-left {
             width: 300px;
+
+            @include mq(sp) {
+                width: 80%;
+            }
 
             .category {
                 margin-bottom: 20px;
@@ -54,12 +149,46 @@ main {
                     &:hover {
                         color: $hover-green;
                     }
+
+                    @include mq(sp) {
+                        position: relative;
+                        font-size: 120%;
+                        border: 1px solid #e8e8e8;
+                        margin-bottom: 2px;
+                        padding-left: 35px;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 15px;
+                            left: 10px;
+                            width: 7px;
+                            height: 7px;
+                            border-top: 2px solid #5f9c21;
+                            border-right: 2px solid #5f9c21;
+                            transform: rotate(45deg);
+                        }
+                    }
                 }
             }
 
             .advertise {
                 margin-bottom: 20px;
                 transition: 0.1s linear;
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                @include mq(sp) {
+                    &:first-child {
+                        display: none;
+                    }
+                    
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
 
                 &:hover {
                     opacity: $hover-opacity;
@@ -93,7 +222,9 @@ main {
                             margin-bottom: 10px;
                         }
 
-                        div {
+                        .writer {
+                            display: flex;
+                            justify-content: space-between;
                             margin-bottom: 10px;
 
                             img {
@@ -104,12 +235,12 @@ main {
                                 border-radius: 50px;
                             }
     
-                            .writer__info {
+                            &__info {
                                 width: 150px;
                                 color: #ff7800;
                             }
     
-                            .writer__date {
+                            &__date {
                                 width: 100px;
                                 color: #a8a8a8;
                             }
@@ -152,6 +283,11 @@ main {
 
                 .hatena {
                     margin-top: 20px;
+                }
+
+                .tw-fb-wrap {
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
 

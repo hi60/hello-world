@@ -6,6 +6,10 @@ a {
 h1 {
     width: 224px;
     font-size: 120%;
+
+    @include mq(sp) {
+        font-size: 160%;
+    }
 }
 
 h2 {
@@ -19,6 +23,13 @@ h3 {
     padding: 10px 15px 10px 15px;
     border-radius: 6px;
     margin-bottom: 10px;
+
+    @include mq(sp) {
+        color: #fff;
+        font-size: 160%;
+        background-color: $main-green;
+        border-radius: 0;
+    }
 }
 
 .icon-yellow {
@@ -27,5 +38,6 @@ h3 {
 
     @include mq(sp) {
         color: #000;
+        margin-right: 10px;
     }
 }

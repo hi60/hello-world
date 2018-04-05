@@ -1,4 +1,7 @@
 footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     background-color: #000;
     color: #fff;
     font-size: 90%;
@@ -9,9 +12,13 @@ footer {
         padding-bottom: 20px;
         border-bottom: 1px solid #565656;
 
-        li {
-            padding: 0 25px;
-            border-left: 1px solid #565656;
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 25px;
+                border-left: 1px solid #565656;
+            }
         }
 
         li:first-child {
