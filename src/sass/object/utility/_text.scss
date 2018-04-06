@@ -21,18 +21,24 @@ h2 {
         text-decoration: none;
         line-height: 1.5em;
     }
+
+    @include mq(tb) {
+        font-size: initial;
+        text-align: left;
+        line-height: 1.5em;
+    }
 }
 
 h3 {
-    font-size: 120%;
+    font-size: 15px;
     background-color: #eee;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     border-radius: 6px;
     margin-bottom: 10px;
 
     @include mq(sp) {
         color: #fff;
-        font-size: 160%;
+        font-size: 18px;
         background-color: $main-green;
         border-radius: 0;
         padding-left: 10px;
@@ -40,11 +46,24 @@ h3 {
 }
 
 .icon-yellow {
-    color: yellow;
+    color: #ffe400;
     margin-right: 5px;
 
     @include mq(sp) {
         color: #000;
         margin-right: 10px;
     }
+
+    @include mq(tb) {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+
+.large-font {
+    font-size: 18px !important;
+}
+
+.large-font2 {
+    font-size: 20px !important;
 }

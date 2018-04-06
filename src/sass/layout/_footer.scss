@@ -3,7 +3,7 @@ footer {
     flex-flow: column;
     align-items: center;
     background-color: #000;
-    color: #565656;
+    color: #fff;
     font-size: 90%;
     padding: 20px;
 
@@ -27,9 +27,18 @@ footer {
         ul {
             display: flex;
 
+            @include mq(tb) {
+                flex-wrap: wrap;
+            }
+
             li {
                 padding: 0 25px;
                 border-left: 1px solid #565656;
+
+                @include mq(tb) {
+                    border: none;
+                    padding: 15px 25px;
+                }
             }
         }
 
@@ -50,8 +59,10 @@ footer {
                 flex-wrap: wrap;
 
                 li {
-                    padding: 0 25px;
+                    padding: 0 10px;
                     border-left: 1px solid #565656;
+                    font-size: 10px;
+                    color: #888;
 
                     &:first-child {
                         border: none;
@@ -68,18 +79,53 @@ footer {
             width: 100%;
             border-top: 1px solid #565656;
             text-align: center;
+            font-size: 10px;
+            color: #888;
+        }
+
+        @include mq(tb) {
+            font-size: 12px;
         }
     }
 
-    .footer__scroll-btn {
+    .sp-footer{
         display: none;
 
         @include mq(sp) {
             display: block;
             width: 100%;
             background-color: #000;
-            color: #fff;
             text-align: center;
+            padding: 20px 2px 5px 0;
+            box-sizing: border-box;
+
+            &__scroll-btn {
+                color: #fff;
+                padding-bottom: 20px;
+            }
+
+            &__add-home {
+                background-color: #fff;
+                border-radius: 5px;
+                display: flex;
+                padding: 5px;
+                box-sizing: border-box;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 7px;
+                }
+
+                &__msg {
+                    text-align: left;
+                    line-height: 1.5em;
+
+                    &-1 {
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 }

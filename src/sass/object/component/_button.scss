@@ -12,6 +12,6 @@
     text-align: center;
 
     @include mq(sp) {
-        display: none;
+        display: none !important;
     }
 }

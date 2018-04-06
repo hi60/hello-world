@@ -1,13 +1,40 @@
+'use strict'
+
 $(function (){
     $('.scroll-btn').on('click', function () {
-        $(window).animate({
-            'scrollTop': 0
+        $('html,body').animate({
+            scrollTop: 0
         });
     });
 
-    if ($(window).scrollTop() < $('.keyvisual').offset().top) {
-        $('.scroll-btn').hide();
+    $('.sp-footer__scroll-btn').on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0
+        });
+    });
+
+
+    if ($(window).width() >= 480) {
+        scrlBtnAppearance();
     } else {
-        $('.scroll-btn').show();
+        return false;
     }
+    
+    function scrlBtnAppearance() {
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() < $('.keyvisual').offset().top) {
+                $('.scroll-btn').fadeOut();
+            } else {
+                $('.scroll-btn').fadeIn();
+            }
+        });
+    }
+
+    $('.header__main-tb__menu').on('click', function () {
+        $('.header__nav-bottom').slideToggle(200)
+    });
+    
+    $('.header__main-sp__menu').on('click', function () {
+        $('.header__nav-bottom').slideToggle()
+    });
 });

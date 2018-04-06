@@ -12,13 +12,38 @@
         margin-top: 70px;
     }
 
-    img {
+    @include mq(tb) {
+        background: none;
+    }
+
+    &-pc {
         width: 1200px;
         padding: 20px 0 50px 0;
 
         @include mq(sp) {
+            display: none;
+        }
+
+        @include mq(tb) {
+            display: none;
+        }
+    }
+
+    &-sptb {
+        display: none;
+
+        @include mq(sp) {
+            display: block;
             width: 100%;
-            padding: 0 0 20px 0;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        @include mq(tb) {
+            display: block;
+            width: 100%;
+            padding-bottom: 20px;
+            box-sizing: border-box;
         }
     }
 
@@ -34,6 +59,14 @@
         @include mq(sp) {
             display: none;
         }
+
+        @include mq(tb) {
+            width: 100%;
+            background-color: none;
+            margin: 10px auto;
+            box-sizing: border-box;
+            text-align: left;
+        }
     }
 
     .message-sp {
@@ -43,8 +76,8 @@
             display: block;
             color: #666;
             line-height: 1.5em;
-            font-size: 110%;
-            padding: 0 10px;
+            font-size: 13px;
+            padding: 0 5px;
         }
     }
 }

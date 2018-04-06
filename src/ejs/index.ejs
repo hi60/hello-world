@@ -2,7 +2,6 @@
     const path = 'common';
 %>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,8 @@
     <div class="wrapper">
         <%- include(`${path}/_header`) %>
         <div class="keyvisual">
-            <img src="/assets/img/top01-new.jpg" alt="">
+            <img class="keyvisual-pc" src="/assets/img/top01-new.jpg" alt="">
+            <img class="keyvisual-sptb" src="/assets/img/top02-new.jpg" alt="">
             <div class="message">
                 <p>私達ハローワールドは障害福祉業界のイノベーションに貢献します</p>
             </div>
@@ -191,23 +191,38 @@
                     </article>
                 </section>
                 <section class="contents-right">
+                    <div class="sp-sns__link">
+                        <div class="sp-sns__link-wrap">
+                            <div class="sp-sns__link-wrap__title">
+                                <img class="sp-sns__link-wrap__title__img" src="/assets/img/snsTwIcon.png" alt="">
+                                <p>Twitterでフォローする</p>
+                            </div>
+                            <img class="sp-sns__link-wrap__snsLink" src="/assets/img/snsLinkIcon.png" alt="">
+                        </div>
+                        <div class="sp-sns__link-wrap">
+                            <div class="sp-sns__link-wrap__title">
+                                <img class="sp-sns__link-wrap__title__img" src="/assets/img/snsFbIcon.png" alt="">
+                                <p>Facebookページを見る</p>
+                            </div>
+                            <img class="sp-sns__link-wrap__snsLink" src="/assets/img/snsLinkIcon.png" alt="">
+                        </div>
+                    </div>
                     <div class="sns__share">
-                            <div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 111px; height: 60px;">
-                                <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 111px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1522716450662" name="I0_1522716450662" src="https://apis.google.com/se/0/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;action=share&amp;annotation=vertical-bubble&amp;height=60&amp;hl=ja&amp;origin=http%3A%2F%2Fhello-world.co.jp&amp;url=http%3A%2F%2Fhello-world.co.jp%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ja.-Cs3piExtQE.O%2Fm%3D__features__%2Fam%3DAQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCM6il8lT8MO15w31h7YDoR5ghVHGw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1522716450662&amp;_gfid=I0_1522716450662&amp;parent=http%3A%2F%2Fhello-world.co.jp&amp;pfname=&amp;rpctoken=54463516" data-gapiattached="true" title="G+">
-                                </iframe>
+                        <div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 111px; height: 60px;">
+                            <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 111px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1522716450662" name="I0_1522716450662" src="https://apis.google.com/se/0/_/+1/sharebutton?plusShare=true&amp;usegapi=1&amp;action=share&amp;annotation=vertical-bubble&amp;height=60&amp;hl=ja&amp;origin=http%3A%2F%2Fhello-world.co.jp&amp;url=http%3A%2F%2Fhello-world.co.jp%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ja.-Cs3piExtQE.O%2Fm%3D__features__%2Fam%3DAQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCM6il8lT8MO15w31h7YDoR5ghVHGw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1522716450662&amp;_gfid=I0_1522716450662&amp;parent=http%3A%2F%2Fhello-world.co.jp&amp;pfname=&amp;rpctoken=54463516" data-gapiattached="true" title="G+">
+                            </iframe>
+                        </div>
+                        <div class="hatena">
+                            <a href="http://b.hatena.ne.jp/entry/hello-world.co.jp/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-normal" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                        </div>
+                        <div class="tw-fb-wrap">
+                            <div class="tweet">
+                                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.4ed13d9ce94e60c41048ece32559b04c.ja.html#dnt=false&amp;hashtags=%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89&amp;id=twitter-widget-0&amp;lang=ja&amp;original_referer=http%3A%2F%2Fhello-world.co.jp%2F&amp;size=m&amp;text=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%EF%BD%9CHello%20World%20CO.%2CLTD%20%7C%20%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%E7%A7%81%E9%81%94%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%81%AF%E9%9A%9C%E5%AE%B3%E7%A6%8F%E7%A5%89%E6%A5%AD%E7%95%8C%E3%81%AE%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E8%B2%A2%E7%8C%AE%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&amp;time=1522716451246&amp;type=share&amp;url=http%3A%2F%2Fhello-world.co.jp%2F&amp;via=HelloWorld_jp" style="position: static; visibility: visible; width: 75px; height: 20px;"></iframe>
                             </div>
-                            <div class="hatena">
-                                    <iframe class="hatena-bookmark-button-frame" title="このエントリーをはてなブックマークに追加" frameborder="0" scrolling="no" width="84" height="40" src="javascript:false" style="width: 84px; height: 40px;"></iframe>
-                                    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                            <div class="facebook">
+                                    <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/helloworld1020.jp" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhelloworld1020.jp&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=false&amp;show_faces=true"><span style="vertical-align: bottom; width: 72px; height: 40px;"><iframe name="f5331cce99df2" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FFdM1l_dpErI.js%3Fversion%3D42%23cb%3Df14b8dc982771e%26domain%3Dhello-world.co.jp%26origin%3Dhttp%253A%252F%252Fhello-world.co.jp%252Ff15b0e746763cdc%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhelloworld1020.jp&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=false&amp;show_faces=true" style="border: none; visibility: visible; width: 72px; height: 40px;" class=""></iframe></span></div>
                             </div>
-                            <div class="tw-fb-wrap">
-                                <div class="tweet">
-                                        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.4ed13d9ce94e60c41048ece32559b04c.ja.html#dnt=false&amp;hashtags=%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89&amp;id=twitter-widget-0&amp;lang=ja&amp;original_referer=http%3A%2F%2Fhello-world.co.jp%2F&amp;size=m&amp;text=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%EF%BD%9CHello%20World%20CO.%2CLTD%20%7C%20%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%E7%A7%81%E9%81%94%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%81%AF%E9%9A%9C%E5%AE%B3%E7%A6%8F%E7%A5%89%E6%A5%AD%E7%95%8C%E3%81%AE%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E8%B2%A2%E7%8C%AE%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&amp;time=1522716451246&amp;type=share&amp;url=http%3A%2F%2Fhello-world.co.jp%2F&amp;via=HelloWorld_jp" style="position: static; visibility: visible; width: 75px; height: 20px;"></iframe>
-                                </div>
-                                <div class="facebook">
-                                        <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/helloworld1020.jp" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhelloworld1020.jp&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=false&amp;show_faces=true"><span style="vertical-align: bottom; width: 72px; height: 40px;"><iframe name="f5331cce99df2" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FFdM1l_dpErI.js%3Fversion%3D42%23cb%3Df14b8dc982771e%26domain%3Dhello-world.co.jp%26origin%3Dhttp%253A%252F%252Fhello-world.co.jp%252Ff15b0e746763cdc%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhelloworld1020.jp&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=false&amp;show_faces=true" style="border: none; visibility: visible; width: 72px; height: 40px;" class=""></iframe></span></div>
-                                </div>
-                            </div>
+                        </div>
                     </div>
                     <div class="column__link">
                         <img src="/assets/img/rb2.jpg" alt="">
@@ -218,7 +233,7 @@
                     <div class="side__tags">
                         <h3>タグ</h3>
                         <ul>
-                            <li class="tag__list"><a href="">てんかん</a></li>
+                            <li class="tag__list large-font"><a href="">てんかん</a></li>
                             <li class="tag__list"><a href="">アスペルガー症候群</a></li>
                             <li class="tag__list"><a href="">インフォーマルサービス</a></li>
                             <li class="tag__list"><a href="">サービス等利用計画</a></li>
@@ -226,7 +241,7 @@
                             <li class="tag__list"><a href="">ソーシャルスキルトレーニング</a></li>
                             <li class="tag__list"><a href="">モニタリング</a></li>
                             <li class="tag__list"><a href="">多動性障害</a></li>
-                            <li class="tag__list"><a href="">就労移行</a></li>
+                            <li class="tag__list large-font"><a href="">就労移行</a></li>
                             <li class="tag__list"><a href="">就労継続支援</a></li>
                             <li class="tag__list"><a href="">幼老複合施設</a></li>
                             <li class="tag__list"><a href="">特例子会社等設立促進助成金</a></li>
@@ -234,7 +249,7 @@
                             <li class="tag__list"><a href="">烈脳症</a></li>
                             <li class="tag__list"><a href="">補足給付</a></li>
                             <li class="tag__list"><a href="">重度訪問介護</a></li>
-                            <li class="tag__list"><a href="">障害福祉サービス</a></li>
+                            <li class="tag__list large-font2"><a href="">障害福祉サービス</a></li>
                             <li class="tag__list"><a href="">障害者総合支援法</a></li>
                             <li class="tag__list"><a href="">難病医療法</a></li>
                         </ul>
