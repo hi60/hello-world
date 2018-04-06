@@ -29,7 +29,12 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
 gulp.task('default', ['sass', 'ejs', 'browser-sync'], function() {
     gulp.watch('./src/sass/**/*.scss', ['sass']).on('change', reload);
     gulp.watch('./src/ejs/**/*.ejs', ['ejs']).on('change', reload);
+    gulp.watch('./htdocs/assets/js/script.js', ['bs-reload']);
 });

@@ -216,7 +216,7 @@ header {
             margin: 4px 0; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       header .header__main {
-        margin: 60px auto 20px; } }
+        margin: 100px auto 20px; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       header .header__nav {
         width: 100%;
@@ -231,8 +231,8 @@ header {
           display: none; } }
       @media screen and (min-width: 481px) and (max-width: 768px) {
         header .header__nav-top {
-          justify-content: center;
-          margin-bottom: 30px; } }
+          justify-content: flex-start;
+          margin: 0 0 30px 30px; } }
       header .header__nav-top__sns {
         display: flex;
         color: #aeaeae;
